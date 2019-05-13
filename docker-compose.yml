@@ -1,0 +1,14 @@
+
+version: '3'
+services:
+  apache-drill:
+    # Use custom image of drill which contains a specific dfs configuration
+    image: drill/apache-drill:1.16.0
+    ports:
+      - 8047:8047
+    # command: ['/bin/bash']
+    # Add a volume for the data
+    # volumes:
+    #   - ${HOST_DATA_PATH}:/opt/drill/data
+    #   - ${HOST_CONF_PATH}:/apache-drill/conf/
+    #   - ${HOST_PSTORE_PATH}:/opt/drill/pstore
