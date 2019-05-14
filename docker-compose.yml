@@ -4,9 +4,9 @@ services:
   apache-drill:
     # Use custom image of drill which contains a specific dfs configuration
     image: drill/apache-drill:1.16.0
-    ports:
-      - 8047:8047
-    # command: ['/bin/bash']
+    # ports:
+    #   - 8047:8047
+    # command: ['/bin/sh', '-c', '/opt/drill/bin/drill-embedded']
     # Add a volume for the data
     # volumes:
     #   - ${HOST_DATA_PATH}:/opt/drill/data
