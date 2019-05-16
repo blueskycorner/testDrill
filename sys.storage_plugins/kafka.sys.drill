@@ -1,0 +1,8 @@
+{
+  "type" : "kafka",
+  "kafkaConsumerProps" : {
+    "bootstrap.servers" : "localhost:9092",
+    "group.id" : "drill-consumer"
+  },
+  "enabled" : false
+}

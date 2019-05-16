@@ -1,3 +1,0 @@
-# Allow to run the docker container with volumes
-docker run -i --name drill-1.16.0 -p 8047:8047 --volume /d/Hardis/Project/TotalCRS/total_drill_embedded/conf:/opt/drill/conf --detach --restart unless-stopped -t drill/apache-drill:1.16.0 /bin/ba
-sh
